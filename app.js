@@ -19,7 +19,6 @@ const posts = []
 
 
 app.get("/", (req, res) => {
-
     res.render("home", { homeStartingContent: homeStartingContent, posts: posts })
 })
 
@@ -56,3 +55,6 @@ app.get('/posts/:postname', (req, res) => {
 app.listen(3000, function() {
     console.log("Server started on port 3000");
 });
+
+
+// This the change in the second let see
